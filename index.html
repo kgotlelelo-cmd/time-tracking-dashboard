@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-[#0f1424ff]">
+  <main class="flex flex-col md:flex-row gap-6 p-6 md:p-12 font-[Rubik] md:items-center justify-center md:h-screen">
+    <section class="border-inherit bg-[#1c1f4aff] rounded-2xl">
+      <div class="flex flex-row gap-6 items-center p-6 bg-[#6f76c8ff] rounded-2xl md:flex-col md:p-8 md:items-start md:w-60">
+        <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="border-4 border-white rounded-full h-20" />
+        <div class="text-white">
+          <p class="text-sm font-light">Report for</p>
+          <h1 class="text-2xl font-light md:hidden">Jeremy Robson</h1>
+          <p class="hidden text-3xl font-light md:block">Jeremy</p>
+          <p class="hidden text-3xl font-light md:block">Robson</p>
+        </div>
+      </div>
+      <div class="flex flex-row justify-around text-[#6f76c8ff] p-6 md:gap-2 md:flex-col">
+        <p class="hover:text-white cursor-pointer">Daily</p>
+        <p class="hover:text-white text-white cursor-pointer">Weekly</p>
+        <p class="hover:text-white cursor-pointer">Monthly</p>
+      </div>
+    </section>
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="border-inherit rounded-2xl bg-[#ff8c66ff]">
+        <div class="rounded-t-2xl py-5 bg-[url(./images/icon-work.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem]">
+        </div>
+        <div class="bg-[#1c1f4aff] border-inherit rounded-xl p-4 hover:bg-[#6f76c8ff] md:w-60">
+          <div class="flex justify-between items-center">
+            <p class="text-white">Work</p>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="h-1">
+          </div>
+          <div class="flex justify-between items-center py-2 md:flex-col md:items-start md:gap-2">
+            <p class="text-4xl text-white font-light">32hrs</p>
+            <p class="text-[#bdc1ffff]">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-inherit rounded-2xl bg-[#56c2e6ff]">
+        <div class="rounded-t-2xl py-5 bg-[url(./images/icon-play.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem]">
+        </div>
+        <div class="bg-[#1c1f4aff] border-inherit rounded-xl p-4 hover:bg-[#6f76c8ff]">
+          <div class="flex justify-between items-center">
+            <p class="text-white">Play</p>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="h-1">
+          </div>
+          <div class="flex justify-between items-center py-2 md:flex-col md:items-start md:gap-2">
+            <p class="text-4xl text-white font-light">10hrs</p>
+            <p class="text-[#bdc1ffff]">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-inherit rounded-2xl bg-[#ff5c7cff]">
+        <div class="rounded-t-2xl py-5 bg-[url(./images/icon-study.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem]">
+        </div>
+        <div class="bg-[#1c1f4aff] border-inherit rounded-xl p-4 hover:bg-[#6f76c8ff]">
+          <div class="flex justify-between items-center">
+            <p class="text-white">Study</p>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="h-1">
+          </div>
+          <div class="flex justify-between items-center py-2 md:flex-col md:items-start md:gap-2">
+            <p class="text-4xl text-white font-light">10hrs</p>
+            <p class="text-[#bdc1ffff]">Last Week - 8hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-inherit rounded-2xl bg-[#4acf81ff]">
+        <div class="rounded-t-2xl py-5 bg-[url(./images/icon-exercise.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem]">
+        </div>
+        <div class="bg-[#1c1f4aff] border-inherit rounded-xl p-4 hover:bg-[#6f76c8ff]">
+          <div class="flex justify-between items-center">
+            <p class="text-white">Exercise</p>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="h-1">
+          </div>
+          <div class="flex justify-between items-center py-2 md:flex-col md:items-start md:gap-2">
+            <p class="text-4xl text-white font-light">4hrs</p>
+            <p class="text-[#bdc1ffff]">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-inherit rounded-2xl bg-[#7536d3ff]">
+        <div class="rounded-t-2xl py-5 bg-[url(./images/icon-social.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem]">
+        </div>
+        <div class="bg-[#1c1f4aff] border-inherit rounded-xl p-4 hover:bg-[#6f76c8ff]">
+          <div class="flex justify-between items-center">
+            <p class="text-white">Social</p>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="h-1">
+          </div>
+          <div class="flex justify-between items-center py-2 md:flex-col md:items-start md:gap-2">
+            <p class="text-4xl text-white font-light">5hrs</p>
+            <p class="text-[#bdc1ffff]">Last Week - 10hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-inherit rounded-2xl bg-[#f1c65bff]">
+        <div class="rounded-t-2xl py-5 bg-[url(./images/icon-self-care.svg)] bg-no-repeat bg-[position:right_1rem_top_-0.5rem]">
+        </div>
+        <div class="bg-[#1c1f4aff] border-inherit rounded-xl p-4 hover:bg-[#6f76c8ff]">
+          <div class="flex justify-between items-center">
+            <p class="text-white">Self Care</p>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="h-1">
+          </div>
+          <div class="flex justify-between items-center py-2 md:flex-col md:items-start md:gap-2">
+            <p class="text-4xl text-white font-light">2hrs</p>
+            <p class="text-[#bdc1ffff]">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
